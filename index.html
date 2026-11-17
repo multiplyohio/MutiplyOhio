@@ -1,55 +1,162 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Clifton UMC | Multiply Ohio Church & Community Insights</title>
 
 <style>
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: #f5f7fa;
-  color: #333;
+:root{
+    --navy:#14395b;
+    --blue:#2f6ca3;
+    --light:#f5f7fa;
+    --white:#ffffff;
+    --accent:#edf5fb;
+    --text:#333333;
 }
 
-.hero {
-  background: #15395b;
-  color: white;
-  padding: 60px 40px;
+*{
+    box-sizing:border-box;
 }
 
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 30px;
+body{
+    margin:0;
+    font-family:Segoe UI, Arial, sans-serif;
+    background:var(--light);
+    color:var(--text);
+    line-height:1.6;
 }
 
-.card {
-  background: white;
-  margin: 20px 0;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+.hero{
+    background:linear-gradient(135deg,#14395b,#2f6ca3);
+    color:white;
+    padding:70px 30px;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
-  gap: 20px;
+.hero-content{
+    max-width:1200px;
+    margin:auto;
 }
 
-.accent {
-  border-left: 6px solid #2b6da6;
+.hero h1{
+    font-size:3rem;
+    margin-bottom:10px;
 }
 
-h1,h2,h3 {
-  color: #15395b;
+.hero p{
+    max-width:800px;
+    font-size:1.15rem;
 }
 
-.hero h1,
-.hero p {
-  color: white;
+.metadata{
+    margin-top:20px;
+    padding-top:20px;
+    border-top:1px solid rgba(255,255,255,.25);
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.section{
+    margin-bottom:40px;
+}
+
+.section-title{
+    color:#14395b;
+    margin-bottom:20px;
+    font-size:2rem;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:20px;
+}
+
+.metric{
+    background:white;
+    border-radius:14px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.metric-number{
+    font-size:2rem;
+    font-weight:700;
+    color:#14395b;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:14px;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.accent-card{
+    border-left:6px solid #2f6ca3;
+}
+
+.executive{
+    background:#14395b;
+    color:white;
+}
+
+.executive h2{
+    color:white;
+}
+
+.score-row{
+    margin-bottom:20px;
+}
+
+.score-label{
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.bar{
+    height:14px;
+    background:#e1e1e1;
+    border-radius:20px;
+}
+
+.fill{
+    height:14px;
+    background:#2f6ca3;
+    border-radius:20px;
+}
+
+.review-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.reflection{
+    background:#edf5fb;
+    border-left:6px solid #2f6ca3;
+    padding:35px;
+    border-radius:14px;
+}
+
+.reflection p{
+    font-size:1.2rem;
+    margin:0;
+}
+
+footer{
+    background:#14395b;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:60px;
 }
 
 </style>
@@ -57,7 +164,9 @@ h1,h2,h3 {
 
 <body>
 
-<div class="hero">
+<section class="hero">
+
+<div class="hero-content">
 
 <h1>Clifton UMC</h1>
 
@@ -66,213 +175,237 @@ Understanding a growing urban community shaped by higher education,
 young professionals, and constant population movement.
 </p>
 
-<p>
-<strong>3416 Clifton Avenue, Cincinnati, Ohio</strong><br>
-District: Great Miami River District<br>
-Context: Urban
-</p>
+<div class="metadata">
+
+<strong>Address:</strong> 3416 Clifton Avenue, Cincinnati, Ohio<br>
+
+<strong>District:</strong> Great Miami River District<br>
+
+<strong>Context:</strong> Urban
 
 </div>
+
+</div>
+
+</section>
 
 <div class="container">
 
-<div class="card">
-<h2>Community Snapshot</h2>
+<section class="section">
+
+<h2 class="section-title">Community Snapshot</h2>
 
 <div class="grid">
 
-<div class="card">
-<h3>102,283</h3>
+<div class="metric">
+<div class="metric-number">102,283</div>
 Residents
 </div>
 
-<div class="card">
-<h3>34.55</h3>
+<div class="metric">
+<div class="metric-number">34.55</div>
 Average Age
 </div>
 
-<div class="card">
-<h3>$84,359</h3>
+<div class="metric">
+<div class="metric-number">$84,359</div>
 Household Income
 </div>
 
-<div class="card">
-<h3>+3.92%</h3>
+<div class="metric">
+<div class="metric-number">+3.92%</div>
 Population Growth
 </div>
 
 </div>
 
-</div>
+</section>
 
-<div class="card accent">
-<h2>Community Characteristics</h2>
+<section class="section">
+
+<h2 class="section-title">Community Characteristics</h2>
 
 <div class="grid">
 
-<div>
+<div class="card accent-card">
 <h3>College & University Influence</h3>
+
 <p>
-Thousands of students and university employees shape the community.
+Thousands of students, graduate students, faculty,
+researchers, and university employees shape the
+character of the community.
 </p>
 </div>
 
-<div>
+<div class="card accent-card">
 <h3>Young Professionals</h3>
+
 <p>
-Residents are beginning careers and building networks.
+Residents are beginning careers, developing professional
+networks, and establishing long-term life patterns.
 </p>
 </div>
 
-<div>
+<div class="card accent-card">
 <h3>Growing Urban Neighborhood</h3>
+
 <p>
-Strong population growth creates opportunities for connection.
+Strong population growth continues to attract new residents,
+creating opportunities for connection and engagement.
 </p>
 </div>
 
-<div>
+<div class="card accent-card">
 <h3>High Relationship Potential</h3>
+
 <p>
-Life transitions create opportunities for belonging and discipleship.
+Life transitions create significant opportunities for
+belonging, mentoring, and discipleship.
 </p>
 </div>
 
 </div>
 
-</div>
+</section>
 
-<div class="card">
+<section class="section">
+
+<div class="card executive">
+
 <h2>Executive Insight</h2>
 
 <p>
+
 Clifton represents one of the strongest young-adult ministry
 opportunities in the Great Miami River District.
+
+The combination of education, mobility, culture, and
+professional development creates significant opportunities
+for relational discipleship and community formation.
+
 </p>
 
 </div>
 
-<div class="card accent">
+</section>
 
-<h2>Potential Ministry Connections</h2>
+<section class="section">
 
-<div class="grid">
-
-<div>
-<h3>Young Adult Discipleship</h3>
-<p>
-Create environments where students and young professionals
-can explore faith and purpose.
-</p>
-</div>
-
-<div>
-<h3>Faith & Work Conversations</h3>
-<p>
-Help residents connect faith with everyday decision making.
-</p>
-</div>
-
-<div>
-<h3>Community Building</h3>
-<p>
-Develop small groups, shared meals, and neighborhood events.
-</p>
-</div>
-
-<div>
-<h3>Neighborhood Engagement</h3>
-<p>
-Strengthen community partnerships and local service.
-</p>
-</div>
 <div class="card">
 
-<h2>Website First Impressions Review</h2>
-
-<div class="card accent">
-
-<h3>Overall First Impression</h3>
+<h2>Understanding the Community</h2>
 
 <p>
-The website communicates hospitality, inclusion, worship opportunities,
-and belonging exceptionally well. Visitors can quickly understand
-who the church is and how to connect with the congregation.
+The Clifton neighborhood sits within one of Cincinnati's most dynamic urban environments. Universities, medical centers, and cultural organizations contribute to a community characterized by learning, innovation, and movement.
+</p>
+
+<p>
+Many residents are making major decisions regarding education, careers, relationships, and future direction. The church has a unique opportunity to help people establish meaningful relationships and spiritual roots during seasons of transition.
 </p>
 
 </div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">Who Lives Nearby?</h2>
 
 <div class="grid">
 
-<div class="card accent">
-<h3>What We Celebrate</h3>
-
-<p>
-Clear hospitality messaging, strong emphasis on belonging,
-accessible worship information, and easy pathways for connection.
-</p>
-
+<div class="card">
+<h3>Students</h3>
+<p>Individuals exploring education, identity, vocation, and future direction.</p>
 </div>
 
-<div class="card accent">
-
-<h3>What We Notice</h3>
-
-<p>
-Congregational life is visible throughout the site.
-The overall tone feels welcoming, relational, and community focused.
-</p>
-
+<div class="card">
+<h3>Young Professionals</h3>
+<p>Residents establishing careers and building professional networks.</p>
 </div>
 
-<div class="card accent">
-
-<h3>Questions We Wonder About</h3>
-
-<p>
-How are lives and neighborhoods being transformed through
-the church's ministry and community partnerships?
-</p>
-
+<div class="card">
+<h3>Healthcare & Research Professionals</h3>
+<p>Employees connected to nearby medical and educational institutions.</p>
 </div>
 
-<div class="card accent">
-
-<h3>Opportunities to Explore</h3>
-
-<p>
-Neighborhood partnership stories, volunteer impact testimonies,
-community transformation examples, and stories of spiritual growth.
-</p>
-
+<div class="card">
+<h3>Long-Term Neighbors</h3>
+<p>Residents invested in neighborhood stability and community identity.</p>
 </div>
 
 </div>
 
+</section>
+
+<section class="section">
+
+<h2 class="section-title">Mosaic Segment Snapshot</h2>
+
+<div class="grid">
+
+<div class="card accent-card">
+<h3>Colleges & Cafés</h3>
+<p>Educated, socially connected residents connected to university and cultural life.</p>
 </div>
 
-<div class="card reflection">
+<div class="card accent-card">
+<h3>Influenced by Influencers</h3>
+<p>Digitally connected households whose decisions are shaped through relationships and networks.</p>
+</div>
 
-<h2>Leadership Reflection</h2>
-
-<p>
-
-<strong>
-
-How might Clifton UMC become the place where students,
-young professionals, and longtime neighbors discover
-authentic community and deeper faith during seasons of transition?
-
-</strong>
-
-</p>
-
+<div class="card accent-card">
+<h3>Urban Ambition</h3>
+<p>Career-focused residents pursuing opportunity, achievement, and growth.</p>
 </div>
 
 </div>
 
-</body>
-</html>
+</section>
+
+<section class="section">
+
+<div class="card">
+
+<h2>Ministry Opportunity Scorecard</h2>
+
+<div class="score-row">
+<div class="score-label">Young Adult Ministry</div>
+<div class="bar"><div class="fill" style="width:95%"></div></div>
 </div>
 
-</
+<div class="score-row">
+<div class="score-label">Community Building</div>
+<div class="bar"><div class="fill" style="width:90%"></div></div>
+</div>
+
+<div class="score-row">
+<div class="score-label">Faith & Work Conversations</div>
+<div class="bar"><div class="fill" style="width:75%"></div></div>
+</div>
+
+<div class="score-row">
+<div class="score-label">Family Ministry</div>
+<div class="bar"><div class="fill" style="width:65%"></div></div>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">Potential Ministry Connections</h2>
+
+<div class="grid">
+
+<div class="card accent-card">
+<h3>Young Adult Discipleship</h3>
+<p>Create environments where students and young professionals can explore faith and purpose together.</p>
+</div>
+
+<div class="card accent-card">
+<h3>Faith & Work Conversations</h3>
+<p>Help residents connect faith with work, studies, and everyday decision making.</p>
+</div>
+
+<div class="card
